@@ -1,0 +1,471 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.bigred{
+	font-size: 20px;
+	color: red;
+}
+/*----------------------------------------------------------*/
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=New+Rocker&display=swap');
+
+
+
+
+
+
+
+
+
+body{
+    background-color: #00050A;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.container{
+    max-width: 1354px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+
+
+
+
+/*---header start---*/
+
+.header{
+    background: rgba(238, 250, 254, 0.50);
+    backdrop-filter: blur(25px);
+    padding: 25px 0;
+    position: sticky;
+}
+
+.header__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__name{
+
+        a{
+        color: #FFF;
+        font-family: New Rocker;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 77%; /* 27.72px */
+        letter-spacing: 2.34px;
+    }
+}
+
+.header__menu-list{
+    display: flex;
+    align-items: center;
+        .header__menu-items{
+            margin-right: 50px;
+                a{
+                    color: #FFF;
+                    font-family: Montserrat;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 77%; /* 15.4px */
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+        }
+
+}
+
+.header__menu-link{
+        &:hover{
+            opacity: 0.7;
+    }
+        &:focus{
+            border-bottom: 1px solid red;
+        }
+}
+
+.header__contacts-row{
+    display: flex;
+    align-items: center;
+}
+
+.header__contscts-mail{
+    margin-bottom: 10px;
+}
+
+.header__contacts-icon{
+    margin-right: 3px;
+}
+
+.header__contscts-phone{
+    padding-left: 70px;
+        p{
+            &::before{
+                content: '';
+                background-image: url(../img/icon/phone.png);
+                background-repeat: no-repeat;
+                background-position: left center;
+                padding-left: 15px;
+            }
+        }
+}
+
+.header__contscts-mail{
+        p{
+            &::before{
+                content: '';
+                background-image: url(../img/icon/mail.png);
+                background-repeat: no-repeat;
+                background-position: left center;
+                padding-left: 20px;
+
+            }
+        }
+}
+
+/*---header end---*/
+
+
+
+
+
+
+
+
+
+/*---intro start---*/
+
+.intro{
+    background-image: url(../img/intro/bg.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1920px;
+    margin-bottom: 109px;
+}
+
+.intro__album_name{
+    padding-top: 70px;
+    margin-bottom: 805px;
+        p{
+            color: #FFF;
+            text-shadow: 0px 11px 0px #000;
+            font-family: New Rocker;
+            font-size: 128px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 77%; /* 98.56px */
+            text-align: center;
+    }
+}
+
+.intro__image{
+    position: absolute;
+    top: 121px;
+    left: 194px;
+}
+
+.intro__artist_name{
+    position: relative;
+    z-index: 3;
+    margin-bottom: 50px;
+        p{
+            color: #FFF;
+            text-shadow: 0px 11px 0px #000;
+            font-family: New Rocker;
+            font-size: 128px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 77%; /* 98.56px */
+            text-align: center;
+        }
+}
+
+.intro__desc{
+    
+        margin-bottom: 60px;
+        p{
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 36px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 93%; /* 33.48px */
+            text-align: center;
+        }
+}
+
+iframe {
+    max-width: 100%;
+}
+
+.intro__video{
+    position: relative;
+    left: 153px;
+    padding-bottom: 62px;
+    iframe{
+        border-radius: 26px;
+    }
+}
+
+/*---intro end---*/
+
+
+
+
+
+
+
+
+
+/*---tracklist start---*/
+
+.tracklist{
+    margin-bottom: 171px;
+}
+
+.tracklist__title{
+    margin-bottom: 101px;
+        p{
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 128px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 93%; /* 119.04px */
+        }
+        span{
+            color: #FFF;
+            font-family: New Rocker;
+            font-size: 128px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 93%;
+        }
+}
+
+.tracklist__content{
+    position: relative;
+    left: 58px;
+}
+
+.tracklist__content-row{
+    display: flex;
+    align-items: center;
+}
+
+.tracklist__content-image{
+    margin-right: 98px;
+    border-radius: 80px;
+}
+
+.tracklist__content-item{
+    margin-bottom: 44px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        p{
+            color: #FFF;
+            text-align: left;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 93%; /* 22.32px */
+        }
+}
+
+.tracklist__ellipse{
+    width: 1046px;
+    height: 1046px;
+    border-radius: 1046px;
+    background: #0F1C29;
+    filter: blur(217px);
+    position: absolute;
+    top: 102px;
+    left: 132px;
+    z-index: -1;
+}
+
+/*---tracklist end---*/
+
+
+
+
+
+
+
+
+
+/*---buy start---*/
+
+.buy__container{
+    max-width: 1433px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.buy__title{
+    margin-bottom: 111px;
+        p{
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 128px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 93%; /* 119.04px */
+        }
+}
+
+.buy__item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.buy__item-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.buy__list p{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 77%; /* 27.72px */
+}
+
+.buy__item-date{
+    margin-bottom: 95px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+}
+
+.buy__item-city{
+    margin-bottom: 95px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.buy__item-club{
+    margin-bottom: 95px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.buy__item-time{
+    margin-bottom: 95px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.buy__item-button{
+    margin-bottom: 95px;
+        a{
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 77%; /* 27.72px */
+            border-radius: 45px;
+            border: 3px solid #FFF;
+            padding: 19px 25px 21px 25px;
+                &:hover, &:active{
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 77%; /* 27.72px */
+                    border-radius: 45px;
+                    border: 3px solid #FFF;
+                    background: #FFF;
+                }
+        }
+}
+
+.buy__ellipse{
+    width: 1046px;
+    height: 1046px;
+    border-radius: 1046px;
+    background: #0F1C29;
+    filter: blur(217px);
+    position: absolute;
+    z-index: -1;
+}
+
+#buy__ellipse1{
+    top: 259px;
+    left: 951px;
+}
+
+#buy__ellipse2{
+    top: 883px;
+    left: -581px;
+}
+
+#buy__ellipse3{
+    top: 1363px;
+    left: 519px;
+}
+
+/*---buy end---*/
